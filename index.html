@@ -78,459 +78,527 @@
     </header>
 
     <main class="my-5">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div>
-            <h1 class="fw-normal">Catalogo Libri</h1>
-          </div>
-          <div>
-            <a class="btn btn-primary btn-lg" href="#" role="button"
-              >Aggiungi Libro</a
-            >
-          </div>
+      <div class="container-md">
+        <div class="row row-cols-sm-1 row-cols-lg-2">
+
+          <!-- book catalog + table -->
+        <div class="col-lg-8">
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <h1 class="fw-normal">Catalogo Libri</h1>
+              </div>
+              <div>
+                <a class="btn btn-primary btn-lg" href="#" role="button"
+                  >Aggiungi Libro</a
+                >
+              </div>
+            </div>
+            <!-- table -->
+            <div class="table-responsive my-4">
+              <table class="table">
+                <table class="table table-striped table-hover align-middle">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="col-md-6">Titolo</th>
+                      <th scope="col" class="d-md-table-cell d-none">
+                        Data prestito
+                      </th>
+                      <th scope="col">Stato</th>
+                      <th scope="col" class="text-center">Azioni</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- I pilastri della terra -->
+                    <tr class="">
+                      <td scope="row">I pilastri della terra</td>
+                      <td class="d-md-table-cell d-none">-</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-success text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          Disponibile
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- I promessi sposi -->
+                    <tr class="">
+                      <td scope="row">I promessi sposi</td>
+                      <td class="d-md-table-cell d-none">-</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-success text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          Disponibile
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- Il signore degli anelli -- 18/10/2023-->
+                    <tr class="">
+                      <td scope="row">Il signore degli anelli</td>
+                      <td class="d-md-table-cell d-none">18/10/2023</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-warning text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          In prestito
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- Harry potter e la pietra filosofale -->
+                    <tr class="">
+                      <td scope="row">Harry Potter e la pietra filosofale</td>
+                      <td class="d-md-table-cell d-none">-</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-success text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          Disponibile
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- Il Codice Da Vinci -- Non disponibile-->
+                    <tr class="">
+                      <td scope="row">Il Codice Da Vinci</td>
+                      <td class="d-md-table-cell d-none">-</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-danger text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          Non disponibile
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- Shining -->
+                    <tr class="">
+                      <td scope="row">Shining</td>
+                      <td class="d-md-table-cell d-none">-</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-success text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          Disponibile
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- La Divina Commedia  -- 21/09/2023-->
+                    <tr class="">
+                      <td scope="row">La Divina Commedia</td>
+                      <td class="d-md-table-cell d-none">21/09/2023</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-warning text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          In prestito
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- Il trono di spade -->
+                    <tr class="">
+                      <td scope="row">Il trono di spade</td>
+                      <td class="d-md-table-cell d-none">-</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-success text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          Disponibile
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- Il mondo di Sofia -- Non diponibile-->
+                    <tr class="">
+                      <td scope="row">Il mondo di Sofia</td>
+                      <td class="d-md-table-cell d-none">-</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-danger text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          Non disponibile
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- Le cronache di Narnia: il leone, la strega e l'armadio -- 25/07/2023 -->
+                    <tr class="">
+                      <td scope="row">
+                        Le Cronache di Narnia: il leone, la strega e l'armadio
+                      </td>
+                      <td class="d-md-table-cell d-none">25/07/2023</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-warning text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          in prestito
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- Il piccolo principe -->
+                    <tr class="">
+                      <td scope="row">Il piccolo principe</td>
+                      <td class="d-md-table-cell d-none">-</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-success text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          Disponibile
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <!-- La storia infinita -->
+                    <tr class="">
+                      <td scope="row">La storia infinita</td>
+                      <td class="d-md-table-cell d-none">-</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn bg-success text-white btn-sm rounded-3 lh-1"
+                          data-bs-toggle="button"
+                          aria-pressed="false"
+                          autocomplete="off"
+                        >
+                          Disponibile
+                        </button>
+                      </td>
+
+                      <td class="text-center">
+                        <a
+                          class="btn btn-outline-secondary btn-sm"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+
+                        <a
+                          class="btn btn-sm btn-outline-secondary"
+                          href="#"
+                          role="button"
+                        >
+                          <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </table>
+            </div>
+
         </div>
 
-        <!-- table -->
-        <div class="table-responsive my-4">
-          <table class="table">
-            <table class="table table-striped table-hover align-middle">
-              <thead>
-                <tr>
-                  <th scope="col" class="col-md-6">Titolo</th>
-                  <th scope="col" class="d-md-table-cell d-none">
-                    Data prestito
-                  </th>
-                  <th scope="col">Stato</th>
-                  <th scope="col" class="text-center">Azioni</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- I pilastri della terra -->
-                <tr class="">
-                  <td scope="row">I pilastri della terra</td>
-                  <td class="d-md-table-cell d-none">-</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-success text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      Disponibile
-                    </button>
-                  </td>
 
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
+          <div class="col-lg-4">
+            <!-- new -- todo -->
+            <div class="card">
+              <div class="card-header pt-3">
+                <h2>Todo</h2>
+              </div>
 
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      id="firstCheckbox"
+                    />
+                    <label class="form-check-label" for="firstCheckbox"
+                      >First checkbox</label
                     >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
+                  </li>
+                  <li class="list-group-item">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      id="secondCheckbox"
+                    />
+                    <label class="form-check-label" for="secondCheckbox"
+                      >Second checkbox</label
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      id="thirdCheckbox"
+                    />
+                    <label class="form-check-label" for="thirdCheckbox"
+                      >Third checkbox</label
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- /.. -->
+            </div>
 
-                <!-- I promessi sposi -->
-                <tr class="">
-                  <td scope="row">I promessi sposi</td>
-                  <td class="d-md-table-cell d-none">-</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-success text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      Disponibile
-                    </button>
-                  </td>
+            <div class="card my-4">
+              <div class="card-header pt-3">
+                <h2>Todo</h2>
+              </div>
 
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <!-- Il signore degli anelli -- 18/10/2023-->
-                <tr class="">
-                  <td scope="row">Il signore degli anelli</td>
-                  <td class="d-md-table-cell d-none">18/10/2023</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-warning text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      In prestito
-                    </button>
-                  </td>
-
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <!-- Harry potter e la pietra filosofale -->
-                <tr class="">
-                  <td scope="row">Harry Potter e la pietra filosofale</td>
-                  <td class="d-md-table-cell d-none">-</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-success text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      Disponibile
-                    </button>
-                  </td>
-
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <!-- Il Codice Da Vinci -- Non disponibile-->
-                <tr class="">
-                  <td scope="row">Il Codice Da Vinci</td>
-                  <td class="d-md-table-cell d-none">-</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-danger text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      Non disponibile
-                    </button>
-                  </td>
-
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <!-- Shining -->
-                <tr class="">
-                  <td scope="row">Shining</td>
-                  <td class="d-md-table-cell d-none">-</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-success text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      Disponibile
-                    </button>
-                  </td>
-
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <!-- La Divina Commedia  -- 21/09/2023-->
-                <tr class="">
-                  <td scope="row">La Divina Commedia</td>
-                  <td class="d-md-table-cell d-none">21/09/2023</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-warning text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      In prestito
-                    </button>
-                  </td>
-
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <!-- Il trono di spade -->
-                <tr class="">
-                  <td scope="row">Il trono di spade</td>
-                  <td class="d-md-table-cell d-none">-</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-success text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      Disponibile
-                    </button>
-                  </td>
-
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <!-- Il mondo di Sofia -- Non diponibile-->
-                <tr class="">
-                  <td scope="row">Il mondo di Sofia</td>
-                  <td class="d-md-table-cell d-none">-</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-danger text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      Non disponibile
-                    </button>
-                  </td>
-
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <!-- Le cronache di Narnia: il leone, la strega e l'armadio -- 25/07/2023 -->
-                <tr class="">
-                  <td scope="row">
-                    Le Cronache di Narnia: il leone, la strega e l'armadio
-                  </td>
-                  <td class="d-md-table-cell d-none">25/07/2023</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-warning text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      in prestito
-                    </button>
-                  </td>
-
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <!-- Il piccolo principe -->
-                <tr class="">
-                  <td scope="row">Il piccolo principe</td>
-                  <td class="d-md-table-cell d-none">-</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-success text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      Disponibile
-                    </button>
-                  </td>
-
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-
-                <!-- La storia infinita -->
-                <tr class="">
-                  <td scope="row">La storia infinita</td>
-                  <td class="d-md-table-cell d-none">-</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn bg-success text-white btn-sm rounded-3 lh-1"
-                      data-bs-toggle="button"
-                      aria-pressed="false"
-                      autocomplete="off"
-                    >
-                      Disponibile
-                    </button>
-                  </td>
-
-                  <td class="text-center">
-                    <a
-                      class="btn btn-outline-secondary btn-sm"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                      class="btn btn-sm btn-outline-secondary"
-                      href="#"
-                      role="button"
-                    >
-                      <i class="fa fa-trash" aria-hidden="true"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </table>
+              <div class="card-body">
+                
+              </div>
+              <!-- /.. -->
+            </div>
+          </div>
         </div>
       </div>
     </main>
+
 
     <footer></footer>
 
