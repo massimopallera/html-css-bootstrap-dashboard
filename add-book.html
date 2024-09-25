@@ -122,15 +122,80 @@
                     />
                     <small id="ita-version" class="form-text text-muted">Titolo versione italiana</small>
                 </div>
+            </div>
+
+            <!-- //genere -->
+            <div class="col-md-3 col-sm-12">
+                <div class="mb-3">
+                    <label for="genere" class="form-label">Genere</label>
+                    <select
+                        class="form-select form-select"
+                        name="genere"
+                        id="genere"
+                    >
+                        <option selected>Scegli il genere</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Drammatico">Drammatico</option>
+                        <option value="Commedia">Commedia</option>
+                    </select>
+                </div>
+                
+            </div>
+            <!-- //publish year -->
+            <div class="col-md-3 col-sm-12">
+                <div class="mb-3">
+                    <label for="publishYear" class="form-label">Anno di Pubblicazione</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="publishYear"
+                        id="publishYear"
+                        aria-describedby=""
+                        placeholder="Inserisci l'Anno"
+                    />
+                </div>
+                
+            </div>
+            <!-- //isbn -->
+            <div class="col-md-3 col-sm-12">
+                <div class="mb-3">
+                    <label for="isbn" class="form-label">ISBN#</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="isbn"
+                        id="isbn"
+                        aria-describedby=""
+                        placeholder="Inserisci il codice ISBN#"
+                    />
+                </div>
                 
             </div>
 
-            <!-- genere -->
-            <div class="col"></div>
-            <!-- publish year -->
-            <div class="col"></div>
-            <!-- isbn -->
-            <div class="col"></div>
+            <hr>
+
+            <!-- //notes + digital -->
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="" class="form-label">Note</label>
+                    <textarea class="form-control" name="" id="" rows="3" placeholder="Inserisci evenutali note sul libro"></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for="digital-version"> Disponibile anche in digitale </label>
+                </div>
+            </div>
+
+            <div class="col">
+                <button
+                type="submit"
+                class="btn btn-primary"
+                >
+                Aggiungi Libro
+            </button>
+        </div>
+            
+            
           </form>
         </div>
       </div>
