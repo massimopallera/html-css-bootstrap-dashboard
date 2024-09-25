@@ -15,7 +15,7 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <title>Stroico prestiti</title>
+        <title>Storico prestiti</title>
 
     </head>
 
@@ -75,10 +75,54 @@
     </header>
 
 
-        <main></main>
+        <main class="my-4">
+            <div class="container">
+                <h2>Storico Prestiti</h2>
+
+                <div
+                    class="table-responsive"
+                >
+                    <table
+                        class="table table-light table-striped"
+                    >
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome Utente</th>
+                                <!-- Could use ID to know exatcly who take a book -->
+                                <th scope="col">Codice Fiscale</th>
+                                <th scope="col">Data Prestito</th>
+                                <th scope="col">Restituito</th>
+
+                                <!-- Could send a message that they have a book, like a reminder -->
+                                <!-- <th scope="col">Segnala</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <td scope="row">R1C1</td>
+                                <td>R1C2</td>
+                                <td>R1C3</td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row">Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </main>
+
+
         <footer>
             <!-- place footer here -->
         </footer>
+
+
+
+
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
