@@ -75,9 +75,10 @@
       <div class="container">
           
           <h2>Nuovo Libro</h2>
+
           <div class="row">
               <form class="row g-3 needs-validation" novalidate>
-            <!-- Nome autore -->
+            <!-- //Nome autore -->
             <div class="col">
               <div class="mb-3">
                 <label for="authorName" class="form-label fw-medium">Nome Autore</label>
@@ -92,7 +93,7 @@
               </div>
               
             </div>
-            <!-- Cognome autore -->
+            <!-- //Cognome autore -->
             <div class="col">
                 <div class="mb-3">
                     <label for="authorSurname" class="form-label">Cognome Autore</label>
@@ -107,8 +108,22 @@
                 </div>                
             </div>
 
-            <!-- book title -->
-            <div class="col-12"></div>
+            <!-- //book title -->
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="bookTitle" class="form-label">Titolo</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="bookTitle"
+                        id="bookTitle"
+                        aria-describedby="ita-version"
+                        placeholder="Inserisci il titolo del libro"
+                    />
+                    <small id="ita-version" class="form-text text-muted">Titolo versione italiana</small>
+                </div>
+                
+            </div>
 
             <!-- genere -->
             <div class="col"></div>
