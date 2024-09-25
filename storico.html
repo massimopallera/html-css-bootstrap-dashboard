@@ -82,32 +82,109 @@
                 <div
                     class="table-responsive"
                 >
-                    <table
-                        class="table table-light table-striped"
-                    >
+
+                    <!-- with table-hover it will be easier to read rows -->
+                    <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th scope="col">Nome Utente</th>
+                                <th colspan="2" scope="col">Nome Utente</th>
+                                    <!-- user name occupies two columns (name and surname), with php you can put every data in a table-cell -->
+
+                                <th scope="col" class="col-4">Nome Libro</th>
                                 <!-- Could use ID to know exatcly who take a book -->
                                 <th scope="col">Codice Fiscale</th>
-                                <th scope="col">Data Prestito</th>
-                                <th scope="col">Restituito</th>
+                                <th scope="col" class="col-2">Data Prestito</th>
+                                <th scope="col" class="col-1 text-center">Restituito</th>
 
                                 <!-- Could send a message that they have a book, like a reminder -->
                                 <!-- <th scope="col">Segnala</th> -->
                             </tr>
                         </thead>
+
+                        <!-- rows are not ordered by date -->
                         <tbody>
                             <tr class="">
-                                <td scope="row">R1C1</td>
-                                <td>R1C2</td>
-                                <td>R1C3</td>
+                                <td scope="row">Nome</td>
+                                <td>Cognome</td>
+                                <td>Il signore degli anelli</td>
+                                <td>CF</td>
+                                <td>
+                                    <span
+                                        class="badge rounded-pill text-bg-secondary"
+                                        >18/10/2023</span
+                                    >
+                                </td>
+                                <td class="text-center">
+                                    <span
+                                        class="badge rounded-pill text-bg-danger"
+                                        >No</span
+                                    >
+                                    
+                                </td>
                             </tr>
+
                             <tr class="">
-                                <td scope="row">Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
+                                <td scope="row">Nome</td>
+                                <td>Cognome</td>
+                                <td>La Divina Commedia</td>
+                                <td>CF</td>
+                                <td>
+                                    <span
+                                        class="badge rounded-pill text-bg-secondary"
+                                        >21/09/2023</span
+                                    >
+                                    
+                                </td>
+                                <td class="text-center">
+                                    <span
+                                        class="badge rounded-pill text-bg-danger"
+                                        >No</span
+                                    >
+                                    
+                                </td>
                             </tr>
+
+                            <tr class="">
+                                <td scope="row">Nome</td>
+                                <td>Cognome</td>
+                                <td> Le Cronache di Narnia: il leone, la strega e l'armadio</td>
+                                <td>CF</td>
+                                <td>
+
+                                    <span
+                                    class="badge rounded-pill text-bg-secondary"
+                                    >25/07/2023</span
+                                    >
+                                </td>
+                                <td class="text-center">
+                                    <span
+                                        class="badge rounded-pill text-bg-danger"
+                                        >No</span
+                                    >
+                                    
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td scope="row">Nome</td>
+                                <td>Cognome</td>
+                                <td>Il Codice Da Vinci</td>
+                                <td>CF</td>
+                                <td>
+                                    <span
+                                        class="badge rounded-pill text-bg-secondary"
+                                        >28/10/2023</span
+                                    >
+                                </td>
+                                <td class="text-center">
+                                    <span
+                                        class="badge rounded-pill text-bg-success"
+                                        >Si</span
+                                    >
+                                    
+                                </td>
+                            </tr>
+
                         </tbody>
                     </table>
                 </div>
